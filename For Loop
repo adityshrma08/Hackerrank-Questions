@@ -1,0 +1,24 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main(){
+    int a,b;
+    cin >> a >> b;
+    for(int i = a; i <= b ; i++){
+        if(a>=1 && a<=9){
+            string name[10] = {"","one","two","three","four","five","six","seven","eight","nine"};
+            cout << name[a] << endl;
+            a++;
+        }
+        if(a>9){
+            for(;a<=b;a++){
+            if(a%2==0){
+                cout << "even" << endl;
+            }
+            if(a%2==1){
+                cout << "odd" << endl;
+            }
+            }
+        }
+    }
+    return 0;
+}
